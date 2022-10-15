@@ -16,7 +16,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class registerActivity extends AppCompatActivity {
     EditText emailBox, passwordBox, confirmBox;
-    Button signupButton;
+    Button signupButton, resetButton;
     FirebaseAuth mAuth;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,9 +26,16 @@ public class registerActivity extends AppCompatActivity {
         passwordBox = findViewById(R.id.passwordBox);
         confirmBox = findViewById(R.id.confirmBox);
         signupButton = findViewById(R.id.signupButton);
+        resetButton = findViewById(R.id.resetButton);
         TextView backLogin = findViewById(R.id.backLogin);
         mAuth = FirebaseAuth.getInstance();
 
+        resetButton.setOnClickListener(view -> {
+            emailBox.setText("");
+            passwordBox.setText("");
+            confirmBox.setText("");
+            emailBox.requestFocus();
+        });
 
         backLogin.setOnClickListener(view -> {
             Intent back = new Intent(this, MainActivity.class);
@@ -72,6 +79,7 @@ public class registerActivity extends AppCompatActivity {
             }
 
             else{
+                passwordBox.setError("");
                 confirmBox.setError("Password not match!");
                 confirmBox.requestFocus();
             }
