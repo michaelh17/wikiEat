@@ -10,10 +10,12 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="196dp"
-        android:layout_height="192dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="19dp"
         android:layout_marginTop="4dp"
-        android:layout_marginEnd="196dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="81dp"
+        app:layout_constraintBottom_toTopOf="@+id/emailBox"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/wikitext" />
 
@@ -22,69 +24,69 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
-        android:layout_marginTop="168dp"
+        android:layout_marginBottom="41dp"
         android:text="Sign Up"
         android:textColor="@color/black"
         android:textSize="50dp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/emailBox"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <TextView
-        android:id="@+id/usernameTV"
+    <Button
+        android:id="@+id/signupButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="48dp"
-        android:text="Username"
-        android:textColor="@color/black"
-        android:textSize="15dp"
-        app:layout_constraintHorizontal_bias="0.047"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        android:layout_marginBottom="9dp"
+        android:text="Sign Up"
+        app:layout_constraintBottom_toTopOf="@+id/resetButton"
+        app:layout_constraintStart_toStartOf="@+id/resetButton"
+        app:layout_constraintTop_toBottomOf="@+id/confirmTV" />
 
     <TextView
-        android:id="@+id/emailTV"
+        android:id="@+id/backLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_marginEnd="40dp"
-        android:text="E-mail"
-        android:textColor="@color/black"
+        android:layout_marginBottom="88dp"
+        android:text="Back to login"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/emailBox"
-        app:layout_constraintTop_toBottomOf="@+id/usernameTV"
-        app:layout_constraintVertical_bias="0.118" />
-
-    <EditText
-        android:id="@+id/passwordBox"
-        android:layout_width="243dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="12dp"
-        android:background="@color/gray"
-        android:ems="10"
-        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailBox" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetButton" />
 
     <EditText
         android:id="@+id/emailBox"
-        android:layout_width="241dp"
-        android:layout_height="39dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="20dp"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="34dp"
         android:background="@color/gray"
         android:ems="10"
         android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/passwordTV"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameBox" />
+        app:layout_constraintStart_toEndOf="@+id/emailTV"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/passwordTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="51dp"
+        android:text="Passsword"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/confirmTV"
+        app:layout_constraintEnd_toStartOf="@+id/passwordBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailBox" />
 
     <EditText
         android:id="@+id/confirmBox"
-        android:layout_width="242dp"
-        android:layout_height="40dp"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="16dp"
         android:background="@color/gray"
@@ -94,70 +96,57 @@
         app:layout_constraintTop_toBottomOf="@+id/passwordBox" />
 
     <EditText
-        android:id="@+id/usernameBox"
-        android:layout_width="242dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="20dp"
+        android:id="@+id/passwordBox"
+        android:layout_width="224dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="30dp"
         android:background="@color/gray"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintStart_toEndOf="@+id/passwordTV"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.506" />
 
     <TextView
         android:id="@+id/confirmTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp"
         android:text="Confirm Password"
         android:textColor="@color/black"
         android:textSize="13dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/signupButton"
         app:layout_constraintEnd_toStartOf="@+id/confirmBox"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTV"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/signupButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="112dp"
-        android:text="Sign Up"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordTV" />
 
     <TextView
-        android:id="@+id/backLogin"
+        android:id="@+id/emailTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="Back to login"
-        android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signupButton"
-        app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/passwordTV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="40dp"
-        android:text="Passsword"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="46dp"
+        android:text="E-mail"
         android:textColor="@color/black"
         android:textSize="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/passwordBox"
-        app:layout_constraintTop_toBottomOf="@+id/emailTV"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/emailBox"
+        app:layout_constraintEnd_toStartOf="@+id/emailBox"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="97dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="9dp"
+        android:text="Reset"
+        app:layout_constraintBottom_toTopOf="@+id/backLogin"
+        app:layout_constraintStart_toStartOf="@+id/confirmBox"
+        app:layout_constraintTop_toBottomOf="@+id/signupButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -84,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()){
                         Intent login = new Intent(MainActivity.this, homepageActivity.class);
+                        login.putExtra("user",email);
                         startActivity(login);
                         finish();
                     }
