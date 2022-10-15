@@ -3,17 +3,19 @@ package com.mobile.example.wikieat;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Button;
 import android.content.Intent;
 import com.google.firebase.auth.FirebaseAuth;
 public class homepageActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
+    Button infoButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homepage);
         mAuth = FirebaseAuth.getInstance();
         Intent intent = getIntent();
-
+        infoButton = findViewById(R.id.infoButton);
         TextView userLogin = findViewById(R.id.userLogin);
         TextView logout = findViewById(R.id.logoutText);
         Bundle getter = intent.getExtras();
@@ -23,6 +25,10 @@ public class homepageActivity extends AppCompatActivity {
             userLogin.setText(getter.getString("user"));
         }
 
+        infoButton.setOnClickListener(view->{
+            Intent contact = new Intent(this,contactActivity.class);
+            startActivity(contact);
+        });
         logout.setOnClickListener(view->{
             mAuth.signOut();
             Intent logoutIntent = new Intent(this, MainActivity.class);
