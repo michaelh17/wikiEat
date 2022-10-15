@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336271184188",
+    "project_id": "wikieat-4ac53",
+    "storage_bucket": "wikieat-4ac53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336271184188:android:d05055ab37082814344e39",
+        "android_client_info": {
+          "package_name": "com.mobile.example.wikieat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336271184188-hgjaf5ofccv4d310buhk2o8bga18t9b2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvQU5gabm2xIBabcKvVWmFUPj_a4-rWq4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336271184188-hgjaf5ofccv4d310buhk2o8bga18t9b2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
