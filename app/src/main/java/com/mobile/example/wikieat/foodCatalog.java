@@ -53,6 +53,7 @@ public class foodCatalog extends AppCompatActivity {
                             "daging babi, daging sapi, dan makanan laut juga digunakan dalam membuat sup ini \n" +
                             "sehingga menciptakan beragam selera. Seperti rasa garam, kecap, miso yang khas, " +
                             "dan juga ramen rasa kari ";
+                    Harga = "Rp. 30.000 - 50.000";
                     popupdialog(Name,Desc,Harga);
                 }
 
@@ -61,6 +62,7 @@ public class foodCatalog extends AppCompatActivity {
                     Desc = "Soba artinya tepung dalam bahasa Jepang, tapi Soba di sini artinya adalah mie. \n\n" +
                             "Mie Jepang yang biasanya dinikmati dengan kecap asin atau kecap manis \n" +
                             "dengan topping telur, atau tempura, atau side dish lainnya. ";
+                    Harga = "Rp. 20.000 - 35.000";
                     popupdialog(Name,Desc,Harga);
                 }
 
@@ -74,6 +76,7 @@ public class foodCatalog extends AppCompatActivity {
                             "Anda dapat menemukan sushi di seluruh Jepang, " +
                             "tetapi sushi dari restoran di daerah kelas tinggi seperti Ginza atau dekat dengan\n" +
                             "pelabuhan perikanan sangat lezat karena ikannya dijamin segar.";
+                    Harga = "Rp. 10.000 - 30.000";
                     popupdialog(Name,Desc,Harga);
                 }
 
@@ -81,6 +84,7 @@ public class foodCatalog extends AppCompatActivity {
                     Name = "Tempura";
                     Desc = "Tempura bisa berupa hidangan seafood, sayuran segar, atau bahan-bahan lainnya yang dicelupkan ke dalam tepung dan telur adonan, " +
                     "kemudian dibaluri dengan tepung roti lalu digoreng sampai cokelat keemasan.";
+                    Harga = "Rp. 20.000 - 35.000";
                     popupdialog(Name,Desc,Harga);
                 }
 
@@ -91,6 +95,7 @@ public class foodCatalog extends AppCompatActivity {
                             "ditusukkan ke tusukan seperti sate. \n" +
                             "Anda biasanya dapat menemukan yakitori di bar / restoran atau biasa disebut " +
                             "Izakaya di Jepang.";
+                    Harga = "Rp. 10.000 - 20.000";
                     popupdialog(Name,Desc,Harga);
                 }
             }
