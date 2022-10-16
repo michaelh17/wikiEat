@@ -47,5 +47,8 @@ public class foodImageAdapter extends BaseAdapter{
             R.drawable.onigiri, R.drawable.ramen,
             R.drawable.soba, R.drawable.sushi,
             R.drawable.tempura, R.drawable.yakitori,
+            R.drawable.matcha, R.drawable.sakuratea,
+            R.drawable.sake, R.drawable.uroncha,
+            R.drawable.shochu, R.drawable.ramune,
     };
 }
