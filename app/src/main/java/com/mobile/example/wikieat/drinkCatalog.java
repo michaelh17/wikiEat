@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
 
-public class foodCatalog extends AppCompatActivity {
+public class drinkCatalog extends AppCompatActivity {
     private AlertDialog.Builder dialogBuilder;
     private AlertDialog dialog;
     private TextView namaMakanan;
@@ -21,7 +21,8 @@ public class foodCatalog extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_catalog);
+        setContentView(R.layout.activity_drink_catalog);
+
         backButton = findViewById(R.id.backButton);
         GridView gridview = (GridView) findViewById(R.id.gridView);
         gridview.setAdapter(new foodImageAdapter(this));
@@ -34,13 +35,13 @@ public class foodCatalog extends AppCompatActivity {
                 String Harga;
 
                 if (position == 0){
-                Name = "Onigiri";
-                Desc = "Onigiri adalah nasi kepal versi Jepang yang biasanya berbentuk bola atau segitiga.\n\n" +
-                        "Di Dalam Onigiri biasanya diisi salmon, ayam, umeboshi, dan tuna (dried plum) lalu " +
-                        "kemudian dibungkus dengan nori. Jika Anda baru pertama kali mencobai onigiri, \n" +
-                        "pilihlah tuna dengan mayonese, atau ayam mayonaise karena rasanya sangat familiar dengan lidah Indonesia. \n\n" +
-                        "Onigiri sangat mudah ditemukan di Jepang, hampir semua convenience store menjualnya.";
-                Harga = "Rp. 10.000 - 20.000";
+                    Name = "Onigiri";
+                    Desc = "Onigiri adalah nasi kepal versi Jepang yang biasanya berbentuk bola atau segitiga.\n\n" +
+                            "Di Dalam Onigiri biasanya diisi salmon, ayam, umeboshi, dan tuna (dried plum) lalu " +
+                            "kemudian dibungkus dengan nori. Jika Anda baru pertama kali mencobai onigiri, \n" +
+                            "pilihlah tuna dengan mayonese, atau ayam mayonaise karena rasanya sangat familiar dengan lidah Indonesia. \n\n" +
+                            "Onigiri sangat mudah ditemukan di Jepang, hampir semua convenience store menjualnya.";
+                    Harga = "Rp. 10.000 - 20.000";
                     popupdialog(Name,Desc,Harga);
                 }
 
@@ -82,7 +83,7 @@ public class foodCatalog extends AppCompatActivity {
                 else if (position == 4){
                     Name = "Tempura";
                     Desc = "Tempura bisa berupa hidangan seafood, sayuran segar, atau bahan-bahan lainnya yang dicelupkan ke dalam tepung dan telur adonan, " +
-                    "kemudian dibaluri dengan tepung roti lalu digoreng sampai cokelat keemasan.";
+                            "kemudian dibaluri dengan tepung roti lalu digoreng sampai cokelat keemasan.";
                     Harga = "Rp. 20.000 - 35.000";
                     popupdialog(Name,Desc,Harga);
                 }
@@ -131,5 +132,6 @@ public class foodCatalog extends AppCompatActivity {
             }
         });
     }
+
 
 }
