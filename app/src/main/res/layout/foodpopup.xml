@@ -74,12 +74,11 @@
 
     <ImageView
         android:id="@+id/fotoMakanan"
-        android:layout_width="133dp"
-        android:layout_height="116dp"
+        android:layout_width="218dp"
+        android:layout_height="201dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/deskripsi"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
 

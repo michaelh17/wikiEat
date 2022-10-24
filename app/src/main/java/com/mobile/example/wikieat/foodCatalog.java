@@ -75,13 +75,10 @@ public class foodCatalog extends AppCompatActivity {
 
                 else if (position == 3){
                     Name = "Sushi";
-                    Desc = "Sushi adalah masakan menggabungkan cuka beras dan makanan laut. \n" +
-                            "Ada juga jenis sushi fermentasi yang dikenal sebagai nare-sushi. \n\n" +
-                            "Tetapi jenis yang paling khas dari sushi adalah  Nigirizushi yang memiliki bentuk sederhana dan Temakizushi yang biasanya digulung menggunakan nori atau rumput laut.\n\n" +
-                            "Ada banyak bahan lain yang tersedia bagi Anda yang tidak suka ikan mentah, \n" +
-                            "termasuk udang rebus dan belut panggang. \n\n" +
+                    Desc = "Sushi adalah masakan yang menggabungkan cuka beras dan makanan laut. \n" +
+                            "Jenis yang paling khas dari sushi adalah  Nigirizushi yang memiliki bentuk sederhana dan Temakizushi yang biasanya digulung menggunakan nori atau rumput laut. " +
                             "Anda dapat menemukan sushi di seluruh Jepang, " +
-                            "tetapi sushi dari restoran di daerah kelas tinggi seperti Ginza atau dekat dengan\n" +
+                            "tetapi sushi dari restoran di daerah kelas tinggi seperti Ginza atau dekat dengan " +
                             "pelabuhan perikanan sangat lezat karena ikannya dijamin segar.";
                     Harga = "Rp. 10.000 - 30.000";
                     itemNum = position;
@@ -199,6 +196,50 @@ public class foodCatalog extends AppCompatActivity {
 
         if (d == 0){
             fotoMakanan.setImageResource(R.drawable.onigiri);
+        }
+
+        else if (d == 1){
+            fotoMakanan.setImageResource(R.drawable.ramen);
+        }
+
+        else if (d == 2){
+            fotoMakanan.setImageResource(R.drawable.soba);
+        }
+
+        else if (d == 3){
+            fotoMakanan.setImageResource(R.drawable.sushi);
+        }
+
+        else if (d == 4){
+            fotoMakanan.setImageResource(R.drawable.tempura);
+        }
+
+        else if (d == 5){
+            fotoMakanan.setImageResource(R.drawable.yakitori);
+        }
+
+        else if (d == 6){
+            fotoMakanan.setImageResource(R.drawable.matcha);
+        }
+
+        else if (d == 7){
+            fotoMakanan.setImageResource(R.drawable.sakuratea);
+        }
+
+        else if (d == 8){
+            fotoMakanan.setImageResource(R.drawable.sake);
+        }
+
+        else if (d == 9){
+            fotoMakanan.setImageResource(R.drawable.uroncha);
+        }
+
+        else if (d == 10){
+            fotoMakanan.setImageResource(R.drawable.shochu);
+        }
+
+        else if (d == 11){
+            fotoMakanan.setImageResource(R.drawable.ramune);
         }
 
         dialogBuilder.setView(popupview);
