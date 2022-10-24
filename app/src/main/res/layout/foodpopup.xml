@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/deskripsi"
-        android:layout_width="323dp"
-        android:layout_height="427dp"
+        android:layout_width="321dp"
+        android:layout_height="484dp"
         android:justificationMode="inter_word"
         android:text="TextView"
         android:textAlignment="textStart"
@@ -71,5 +71,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/fotoMakanan"
+        android:layout_width="133dp"
+        android:layout_height="116dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/deskripsi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

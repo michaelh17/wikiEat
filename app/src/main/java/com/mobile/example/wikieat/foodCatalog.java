@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.TextView;
+import android.widget.ImageView;
 
 public class foodCatalog extends AppCompatActivity {
     private AlertDialog.Builder dialogBuilder;
@@ -16,6 +17,9 @@ public class foodCatalog extends AppCompatActivity {
     private TextView deskripsi;
     private TextView hargaText;
     private Button kembaliButton;
+    private ImageView fotoMakanan;
+
+
     Button backButton;
 
     @Override
@@ -32,6 +36,7 @@ public class foodCatalog extends AppCompatActivity {
                 String Name;
                 String Desc;
                 String Harga;
+                Integer itemNum;
 
                 if (position == 0){
                 Name = "Onigiri";
@@ -41,7 +46,8 @@ public class foodCatalog extends AppCompatActivity {
                         "pilihlah tuna dengan mayonese, atau ayam mayonaise karena rasanya sangat familiar dengan lidah Indonesia. \n\n" +
                         "Onigiri sangat mudah ditemukan di Jepang, hampir semua convenience store menjualnya.";
                 Harga = "Rp. 10.000 - 20.000";
-                    popupdialog(Name,Desc,Harga);
+                itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 1){
@@ -53,7 +59,8 @@ public class foodCatalog extends AppCompatActivity {
                             "sehingga menciptakan beragam selera. Seperti rasa garam, kecap, miso yang khas, " +
                             "dan juga ramen rasa kari ";
                     Harga = "Rp. 30.000 - 50.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 2){
@@ -62,7 +69,8 @@ public class foodCatalog extends AppCompatActivity {
                             "Mie Jepang yang biasanya dinikmati dengan kecap asin atau kecap manis \n" +
                             "dengan topping telur, atau tempura, atau side dish lainnya. ";
                     Harga = "Rp. 20.000 - 35.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 3){
@@ -76,7 +84,8 @@ public class foodCatalog extends AppCompatActivity {
                             "tetapi sushi dari restoran di daerah kelas tinggi seperti Ginza atau dekat dengan\n" +
                             "pelabuhan perikanan sangat lezat karena ikannya dijamin segar.";
                     Harga = "Rp. 10.000 - 30.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 4){
@@ -84,7 +93,8 @@ public class foodCatalog extends AppCompatActivity {
                     Desc = "Tempura bisa berupa hidangan seafood, sayuran segar, atau bahan-bahan lainnya yang dicelupkan ke dalam tepung dan telur adonan, " +
                     "kemudian dibaluri dengan tepung roti lalu digoreng sampai cokelat keemasan.";
                     Harga = "Rp. 20.000 - 35.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 5){
@@ -95,7 +105,8 @@ public class foodCatalog extends AppCompatActivity {
                             "Anda biasanya dapat menemukan yakitori di bar / restoran atau biasa disebut " +
                             "Izakaya di Jepang.";
                     Harga = "Rp. 10.000 - 20.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 6){
@@ -105,7 +116,8 @@ public class foodCatalog extends AppCompatActivity {
                             "Matcha kerap disajikan dalam bentuk minuman. \n\n" +
                             "Namun  Matcha dapat dikonsumsi sebagai topping kue, cookies, permen, latte, dan lain sebagainya.";
                     Harga = "Rp. 10.000 - 25.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 7){
@@ -115,7 +127,8 @@ public class foodCatalog extends AppCompatActivity {
                             "Bunga sakura yang diseduh dan dijadikan teh akan terasa nikmat. " +
                             "Teh ini cocok diminum sambil menikmati musim semi di Jepang.";
                     Harga = "Rp. 10.000 - 25.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 8){
@@ -126,7 +139,8 @@ public class foodCatalog extends AppCompatActivity {
                             "Rasanya bercampur antara rasa alkohol penuh umami dengan rasa manis seperti wine. " +
                             "Sake di setiap wilayah di Jepang memiliki rasa yang unik khas lokal.";
                     Harga = "Rp. 80.000 - 900.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 9){
@@ -136,7 +150,8 @@ public class foodCatalog extends AppCompatActivity {
                             "Teh hitam, teh hijau dan Uroncha memang berasal dari daun teh yang sama. Namun, proses oksidasi Uroncha memberikan aroma yang kuat. " +
                             "Minuman ini biasanya diminum saat makan siang untuk menenangkan perut.";
                     Harga = "Rp. 10.000 - 50.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 10){
@@ -144,7 +159,8 @@ public class foodCatalog extends AppCompatActivity {
                     Desc =  "Shochu rasanya seperti vodka dan terbuat dari beras, ubi jalar, tebu, dan barley. " +
                             "Rasa Sochu tergantung dari cara penyeduhannya. Varian dari ubi jalar merupakan sochu yang paling terkenal di Jepang.";
                     Harga = "Rp. 50.000 - 600.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
 
                 else if (position == 11){
@@ -154,7 +170,8 @@ public class foodCatalog extends AppCompatActivity {
                             "yang mungkin salah didengar saat pertama kali diperkenalkan di Jepang atau mengalami perubahan bahasa seiring waktu sehingga menjadi ramune. " +
                             "Minuman Ramune sangatlah terkenal di Jepang bahkan di Indonesia sekalipun karena rasanya yang sangat segar.";
                     Harga = "Rp. 20.000 - 100.000";
-                    popupdialog(Name,Desc,Harga);
+                    itemNum = position;
+                    popupdialog(Name,Desc,Harga,itemNum);
                 }
             }
         });
@@ -167,17 +184,22 @@ public class foodCatalog extends AppCompatActivity {
 
 
 
-    public void popupdialog(String a,String b, String c){
+    public void popupdialog(String a,String b, String c, Integer d){
         dialogBuilder = new AlertDialog.Builder(this);
         final View popupview = getLayoutInflater().inflate(R.layout.foodpopup,null);
         deskripsi = (TextView) popupview.findViewById(R.id.deskripsi);
         namaMakanan = (TextView) popupview.findViewById(R.id.namaMakanan);
         hargaText = (TextView) popupview.findViewById(R.id.hargaText);
         kembaliButton = (Button) popupview.findViewById(R.id.kembaliButton);
+        fotoMakanan = (ImageView) popupview.findViewById(R.id.fotoMakanan);
 
         namaMakanan.setText(a);
         deskripsi.setText(b);
         hargaText.setText(c);
+
+        if (d == 0){
+            fotoMakanan.setImageResource(R.drawable.onigiri);
+        }
 
         dialogBuilder.setView(popupview);
         dialog = dialogBuilder.create();

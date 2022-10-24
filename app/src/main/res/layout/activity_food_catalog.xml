@@ -4,13 +4,14 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:gravity="center"
+    android:background="#a6f0ff"
     android:orientation="vertical" >
 
 
     <GridView
         android:id="@+id/gridView"
         android:layout_width="match_parent"
-        android:layout_height="500dp"
+        android:layout_height="661dp"
         android:columnWidth="180dp"
         android:gravity="center"
         android:horizontalSpacing="10dp"
