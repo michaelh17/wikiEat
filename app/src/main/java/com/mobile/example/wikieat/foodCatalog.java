@@ -1,5 +1,4 @@
 package com.mobile.example.wikieat;
-
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -18,7 +17,6 @@ public class foodCatalog extends AppCompatActivity {
     private TextView hargaText;
     private Button kembaliButton;
     private ImageView fotoMakanan;
-
 
     Button backButton;
 
