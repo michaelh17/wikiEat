@@ -25,7 +25,7 @@ public class contactActivity extends AppCompatActivity {
 
         callButton.setOnClickListener(view->{
             Intent call = new Intent(Intent.ACTION_DIAL);
-            call.setData(Uri.parse("tel:082280675281"));
+            call.setData(Uri.parse("tel:112233445566"));
             startActivity(call);
         });
 
